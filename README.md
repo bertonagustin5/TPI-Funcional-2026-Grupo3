@@ -5,6 +5,7 @@ Descripcion:
 ## Integrantes: 
 -Agustin Matias Berton
 -Nicolas Gustavo Blanco 
+-Milagros Esperanza Gonzalez
 
 ## Estructura del repositorio:
 
