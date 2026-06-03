@@ -5,12 +5,10 @@ Descripcion:
 ## Integrantes: 
 Agustin Matias Berton
 
+## Estructura del repositorio:
 
+## Lenguaje Asignado: 
 
-
-Estructura del repositorio:
-
-Lenguaje Asignado: 
-
-Enlaces: -(video de youtube)
+## Enlaces:
+-(video de youtube)
       
