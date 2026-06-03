@@ -3,8 +3,8 @@
 Descripcion:
 
 ## Integrantes: 
-Agustin Matias Berton
-Nicolas Gustavo Blanco 
+-Agustin Matias Berton
+-Nicolas Gustavo Blanco 
 
 ## Estructura del repositorio:
 
