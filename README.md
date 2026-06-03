@@ -4,6 +4,7 @@ Descripcion:
 
 ## Integrantes: 
 Agustin Matias Berton
+Nicolas Gustavo Blanco 
 
 ## Estructura del repositorio:
 
