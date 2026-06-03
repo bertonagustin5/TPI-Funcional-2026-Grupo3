@@ -8,6 +8,7 @@ Agustin Matias Berton
 ## Estructura del repositorio:
 
 ## Lenguaje Asignado: 
+Scheme.
 
 ## Enlaces:
 -(video de youtube)
