@@ -1,5 +1,5 @@
 # TRABAJO PRÁCTICO INTEGRADOR 2026 - PyL
-## Sistema de Semáforos Inteligentes y Análisis Comparativo de Paradigmas 🚦
+## Sistema de Semáforos Inteligentes 🚦 y Análisis Comparativo de Paradigmas 
 Descripcion:
 
 ## Integrantes: 
