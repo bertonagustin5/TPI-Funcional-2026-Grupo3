@@ -44,3 +44,36 @@
       
       ;; Amarillo: Últimos 6 segundos (del segundo 210 al 215)
       (t 'en-amarillo))))
+
+;REQUERIMIENTO 3:
+;; ========================================================
+;; FUNCIÓN: sistema-auditoria
+;; NATURALEZA: Impura (Imprime información en la terminal usando format)
+;; ESTRATEGIA: Compara el color anterior y el color actual usando timer.
+;; IMPACTO: No Destructiva
+;; ========================================================
+(defun sistema-auditoria (tiempo-unix)
+	(let ((color-anterior (timer (- tiempo-unix 1))) (color-nuevo (timer tiempo-unix)))
+		(if (eq color-anterior color-nuevo)
+			(format t "Tiempo ~A: no se realizo un cambio de luz~%" tiempo-unix)
+			(format t "Tiempo ~A: la luz ha cambiado de ~A a ~A~%" tiempo-unix color-anterior color-nuevo)
+		)
+	)
+)
+
+;REQUERIMIENTO 6:
+;; ========================================================
+;; FUNCIÓN: distribucion-temporal
+;; NATURALEZA: Pura (solo calcula los porcentajes)
+;; ESTRATEGIA: Calcula los porcentajes a partir de cuánto dura cada color.
+;; IMPACTO: No Destructiva 
+;; ========================================================
+(defun distribucion-temporal ()
+  (let ((duracion-total 216)(tiempo-rojo 90)(tiempo-amarillo 6)(tiempo-verde 120))
+  	(list
+     	(list 'en-rojo (* (/ tiempo-rojo duracion-total) 100.0))
+     	(list 'en-amarillo (* (/ tiempo-amarillo duracion-total) 100.0))
+     	(list 'en-verde (* (/ tiempo-verde duracion-total) 100.0))
+    )
+  )
+)
