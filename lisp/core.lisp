@@ -1,13 +1,14 @@
 ;; =========================================================
-;; TRABAJO PRÁCTICO: SEMÁFOROS (PUNTOS 1 Y 2)
+;; TRABAJO PRÁCTICO INTEGRADOR: SEMÁFOROS 
 ;; Paradigmas de Lenguajes 
 ;; =========================================================
 
+;REQUERIMIENTO 1:
 ;;; -------------------------------------------------------
-;;; Funcion: Modela el cambio de luces del semáforo y valida si la transición solicitada es lícita.
-;;; Naturaleza: Función pura (sin efectos secundarios ni mutación de estado).
-;;; Estrategia: Emplea la estructura condicional 'cond' junto con evaluaciones lógicas ('and', 'eq') para verificar emparejamientos exactos de estados.
-;;; Impacto: Garantiza la seguridad del sistema evitando cambios de luz no permitidos (ej. de rojo a amarillo), retornando una acción por defecto en caso de anomalía.
+;;; FUNCIÓN: Modela el cambio de luces del semáforo y valida si la transición solicitada es lícita.
+;;; NATURALEZA: Función pura (sin efectos secundarios ni mutación de estado).
+;;; ESTRATEGIA: Emplea la estructura condicional 'cond' junto con evaluaciones lógicas ('and', 'eq') para verificar emparejamientos exactos de estados.
+;;; IMPACTO: Garantiza la seguridad del sistema evitando cambios de luz no permitidos (ej. de rojo a amarillo), retornando una acción por defecto en caso de anomalía.
 ;;; -------------------------------------------------------
 (defun transicion (color-actual cambiar-a)
   (cond
@@ -26,12 +27,12 @@
     ;; Si la combinación no es ninguna de las anteriores, es inválida
     (t (list color-actual 'accion-por-defecto))))
 
-
+;REQUERIMIENTO 2:
 ;;; -------------------------------------------------------
-;;; Funcion: Calcula el color activo del semáforo en un momento dado basándose en el tiempo transcurrido.
-;;; Naturaleza: Función pura y determinística.
-;;; Estrategia: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 216 segundos, evaluando rangos numéricos con 'cond'.
-;;; Impacto: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
+;;; FUNCIÓN: Calcula el color activo del semáforo en un momento dado basándose en el tiempo transcurrido.
+;;; NATURALEZA: Función pura y determinística.
+;;; ESTRATEGIA: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 216 segundos, evaluando rangos numéricos con 'cond'.
+;;; IMPACTO: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
 ;;; -------------------------------------------------------
 (defun timer (tiempo-unix)
   (let ((segundo-actual (mod tiempo-unix 216)))
