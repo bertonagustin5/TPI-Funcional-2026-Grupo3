@@ -1,6 +1,6 @@
 # Código de Honor y Declaración de Autoría
 
-👤 Integrante 1: Agustin Berton - Usuario GitHub: bertonagustin5
+## 👤 Integrante 1: **Agustin Berton** - **Usuario GitHub: bertonagustin5**
 ### 1. Código en Common Lisp (Fase 1 y 2)
 - [ ] Desarrollo 100% Humano: El código fue diseñado, escrito y depurado puramente por mí/el grupo sin intervención de IA.
 - [x] Asistencia de IA (Co-piloto): Utilicé IA como un tutor o documentación dinámica (búsqueda de errores sintácticos, explicación de funciones primitivas), pero la lógica y clasificación del semáforo fue estructurada por el grupo.
