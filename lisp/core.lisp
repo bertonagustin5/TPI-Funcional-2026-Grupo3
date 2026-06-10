@@ -4,12 +4,12 @@
 ;; =========================================================
 
 ;REQUERIMIENTO 1:
-;;; -------------------------------------------------------
-;;; FUNCIÓN: Modela el cambio de luces del semáforo y valida si la transición solicitada es lícita.
+;;; ========================================================
+;;; FUNCIÓN: transicion
 ;;; NATURALEZA: Función pura (sin efectos secundarios ni mutación de estado).
 ;;; ESTRATEGIA: Emplea la estructura condicional 'cond' junto con evaluaciones lógicas ('and', 'eq') para verificar emparejamientos exactos de estados.
 ;;; IMPACTO: Garantiza la seguridad del sistema evitando cambios de luz no permitidos (ej. de rojo a amarillo), retornando una acción por defecto en caso de anomalía.
-;;; -------------------------------------------------------
+;;; ========================================================
 (defun transicion (color-actual cambiar-a)
   (cond
     ;; Transición válida: De Rojo a Verde
@@ -28,12 +28,12 @@
     (t (list color-actual 'accion-por-defecto))))
 
 ;REQUERIMIENTO 2:
-;;; -------------------------------------------------------
-;;; FUNCIÓN: Calcula el color activo del semáforo en un momento dado basándose en el tiempo transcurrido.
+;;; ========================================================
+;;; FUNCIÓN: timer
 ;;; NATURALEZA: Función pura y determinística.
 ;;; ESTRATEGIA: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 216 segundos, evaluando rangos numéricos con 'cond'.
 ;;; IMPACTO: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
-;;; -------------------------------------------------------
+;;; ========================================================
 (defun timer (tiempo-unix)
   (let ((segundo-actual (mod tiempo-unix 216)))
     (cond
