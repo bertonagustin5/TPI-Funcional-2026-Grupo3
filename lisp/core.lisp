@@ -73,7 +73,7 @@
 (defun duracion-ciclo (rojo amarillo verde)
 	;recibe como parametro el valor de segundos de cada color
   (+ (* 2 rojo) amarillo verde )
-	;calcula la duracion de un ciclo 
+	;calcula la duracion de un ciclo
   )
 
 ;; ========================================================
