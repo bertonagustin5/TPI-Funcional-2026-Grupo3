@@ -140,3 +140,26 @@
 	    )
 	)
 )
+
+;EXTENSIÓN 2:
+;; ========================================================
+;; FUNCIÓN: informe
+;; NATURALEZA: Impura (escribe información en un archivo de texto)
+;; ESTRATEGIA: Usa mapcar para recorrer los datos y local-time para mostrar fechas.
+;; IMPACTO: No destructiva
+;; ========================================================
+(defun informe (datos)
+  (with-open-file (stream "informe-ejecucion-semaforo.txt" :direction :output :if-exists :append)
+    (format stream "Informe de Ejecución del Sistema Semafórico~%")
+    (format stream "=========================================~%")
+    (mapcar 
+	 (lambda (registro)
+       (format stream "~A - Transición: ~A -> ~A~%"
+               (local-time:format-timestring nil
+               (local-time:unix-to-timestamp (car registro)))
+               (cadr registro)
+               (caddr registro)))
+     datos)
+    (format stream "~%--- Fin del Informe ---")
+	)
+)
