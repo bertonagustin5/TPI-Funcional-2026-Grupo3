@@ -36,16 +36,6 @@
   ;; Si la combinación no es ninguna de las anteriores, es inválida
   (t (list color-actual 'accion-por-defecto))))
 
-
-
-
-;; Transición válida: De Rojo a Verde
-  ((and (eq color-actual 'en-rojo)  (eq cambiar-a 'verde))
-   (list 'en-rojo "cambiar-a-verde"))
-  
-
-
-  <
 ;REQUERIMIENTO 2:
 ;;; ========================================================
 ;;; FUNCIÓN: timer
@@ -57,15 +47,15 @@
 (let ((segundo-actual (mod tiempo-unix 225)))
   (cond
     
-    ((< segundo-actual 89) 'en-rojo)
+    ((< segundo-actual 90) 'en-rojo)
     
-    ((< segundo-actual 92) 'en-intermitente)
+    ((< segundo-actual 93) 'en-intermitente)
 
-    ((< segundo-actual 98) 'en-amarillo)
+    ((< segundo-actual 99) 'en-amarillo)
 
-     ((< segundo-actual 101) 'en-intermitente)
+    ((< segundo-actual 102) 'en-intermitente)
 
-    ((< segundo-actual 221 ) 'en-verde)
+    ((< segundo-actual 222) 'en-verde)
     
     (t 'en-intermitente))))
 
@@ -107,20 +97,16 @@
 ;; ========================================================
 (defun recomendacion-ciclo (duracion)
 (cond 
-  ((< (duracion) 35)
+  ((< duracion 35)
    "Ciclo demasiado corto")
 
-  ((<= (duracion) 150)
+  ((<= duracion 150)
    "Ciclo en rango optimo")
 
   (t
    "Ciclo demasiado largo")
-
   )
 )
-
-
-
 
 ;REQUERIMIENTO 5:
 
@@ -132,10 +118,9 @@
 ;; IMPACTO: No destructiva
 ;; ========================================================
 
-
 (defun ciclos-por-tiempo (minutos)
   ;recibe los minutos 
-  (floor(/ (* minutos 60)  (duracion-ciclo ))))
+  (floor(/ (* minutos 60)  (duracion-ciclo 90 6 120 3))))
 
 
 ;REQUERIMIENTO 6:
@@ -146,12 +131,12 @@
 ;; IMPACTO: No Destructiva 
 ;; ========================================================
 (defun distribucion-temporal ()
-(let ((duracion-total 216)(tiempo-rojo 90)(tiempo-amarillo 6)(tiempo-verde 120)(tiempo-intermitemnte 3))
-	(list
-   	(list 'en-rojo (* (/ tiempo-rojo duracion-total) 100.0))
-   	(list 'en-amarillo (* (/ tiempo-amarillo duracion-total) 100.0))
-   	(list 'en-verde (* (/ tiempo-verde duracion-total) 100.0))
-    (list 'en-intermitente(* (/ tiempo-intermitemnte duracion-total) 100.0))
-  )
-)
+	(let ((duracion-total 225)(tiempo-rojo 90)(tiempo-amarillo 6)(tiempo-verde 120)(tiempo-intermitente 9))
+		(list
+		   	(list 'en-rojo (* (/ tiempo-rojo duracion-total) 100.0))
+		   	(list 'en-amarillo (* (/ tiempo-amarillo duracion-total) 100.0))
+		   	(list 'en-verde (* (/ tiempo-verde duracion-total) 100.0))
+		    (list 'en-intermitente(* (/ tiempo-intermitente duracion-total) 100.0))
+	    )
+	)
 )
