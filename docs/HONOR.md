@@ -14,7 +14,6 @@
 - [ ] Redacción Asistida / Generada: La IA redactó o fundamentó las respuestas teóricas basadas en prompts conceptuales proporcionados por el grupo.
 - [ ] Generación completa por IA
 Declaración Jurada: Al subir este archivo al repositorio, declaro bajo compromiso de honor que las marcas anteriores reflejan fielmente mi participación y la naturaleza del desarrollo de este trabajo práctico. Entiendo que la cátedra cruzará esta declaración con la correcta clasificación en comentarios del código y con mi desempeño en la defensa oral/video.
-# Código de Honor y Declaración de Autoría
 
 ## 👤 Integrante 2: **Blanco ** - **Usuario GitHub: **
 ### 1. Código en Common Lisp (Fase 1 y 2)
@@ -30,9 +29,8 @@ Declaración Jurada: Al subir este archivo al repositorio, declaro bajo compromi
 - [ ] Redacción Asistida / Generada: La IA redactó o fundamentó las respuestas teóricas basadas en prompts conceptuales proporcionados por el grupo.
 - [ ] Generación completa por IA
 Declaración Jurada: Al subir este archivo al repositorio, declaro bajo compromiso de honor que las marcas anteriores reflejan fielmente mi participación y la naturaleza del desarrollo de este trabajo práctico. Entiendo que la cátedra cruzará esta declaración con la correcta clasificación en comentarios del código y con mi desempeño en la defensa oral/video. 
-# Código de Honor y Declaración de Autoría
 
-## 👤 Integrante 1: **Milagros Gonzalez** - **Usuario GitHub: tupu910**
+## 👤 Integrante 3: **Milagros Gonzalez** - **Usuario GitHub: tupu910**
 ### 1. Código en Common Lisp (Fase 1 y 2)
 - [ ] Desarrollo 100% Humano: El código fue diseñado, escrito y depurado puramente por mí/el grupo sin intervención de IA.
 - [x] Asistencia de IA (Co-piloto): Utilicé IA como un tutor o documentación dinámica (búsqueda de errores sintácticos, explicación de funciones primitivas), pero la lógica y clasificación del semáforo fue estructurada por el grupo.
@@ -46,4 +44,4 @@ Declaración Jurada: Al subir este archivo al repositorio, declaro bajo compromi
 - [ ] Redacción Asistida / Generada: La IA redactó o fundamentó las respuestas teóricas basadas en prompts conceptuales proporcionados por el grupo.
 - [ ] Generación completa por IA
 Declaración Jurada: Al subir este archivo al repositorio, declaro bajo compromiso de honor que las marcas anteriores reflejan fielmente mi participación y la naturaleza del desarrollo de este trabajo práctico. Entiendo que la cátedra cruzará esta declaración con la correcta clasificación en comentarios del código y con mi desempeño en la defensa oral/video.
-# Código de Honor y Declaración de Autoría
+
