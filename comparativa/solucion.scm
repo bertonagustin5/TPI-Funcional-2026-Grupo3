@@ -34,3 +34,24 @@
   ;; Si la combinación no es ninguna de las anteriores, es inválida
   (else (list color-actual 'accion-por-defecto))))
 
+;;; ========================================================
+;;; FUNCIÓN: timer
+;;; NATURALEZA: Función pura y determinística.
+;;; ESTRATEGIA: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 216 segundos, evaluando rangos numéricos con 'cond'.
+;;; IMPACTO: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
+;;; ========================================================
+(defun timer (tiempo-unix)
+(let ((segundo-actual (mod tiempo-unix 225)))
+  (cond
+    
+    ((< segundo-actual 90) 'en-rojo)
+    
+    ((< segundo-actual 93) 'en-intermitente)
+
+    ((< segundo-actual 99) 'en-amarillo)
+
+    ((< segundo-actual 102) 'en-intermitente)
+
+    ((< segundo-actual 222) 'en-verde)
+    
+    (else 'en-intermitente))))
