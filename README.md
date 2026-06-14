@@ -18,13 +18,11 @@ Ademas, se incluye una comparacion con Scheme, donde se reimplementan 2 funcione
 TPI-Funcional-2026-Grupo3/
 ├── lisp/
 │   ├── core.lisp
-│   └── informe-ejecucion-semaforo.txt
 │
 ├── comparativa/
 │   └── solucion.scm
 │
 ├── docs/
-│   ├── INFORME.md
 │   ├── INFORME.pdf
 │   └── HONOR.md
 │
