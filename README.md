@@ -1,6 +1,9 @@
 # TRABAJO PRÁCTICO INTEGRADOR 2026 - PyL
 ## Sistema de Semáforos Inteligentes 🚦 y Análisis Comparativo de Paradigmas 
-Descripcion:
+### Descripcion: 
+Este repositorio contiene el desarrollo del Trabajo Práctico Integrador de Paradigmas de Lenguajes.
+El proyecto consiste en implementar el núcleo lógico de un sistema de semáforos inteligentes utilizando Common Lisp.
+Ademas, se incluye una comparacion con Scheme, donde se reimplementan 2 funciones del codigo principal con este lenguaje
 
 ## Integrantes: 
 - Agustin Matias Berton
@@ -8,7 +11,20 @@ Descripcion:
 - Milagros Esperanza Gonzalez
 
 ## Estructura del repositorio:
-
+TPI-Funcional-2026-Grupo3/
+├── lisp/
+│   ├── core.lisp
+│   └── informe-ejecucion-semaforo.txt
+│
+├── comparativa/
+│   └── solucion.scm
+│
+├── docs/
+│   ├── INFORME.md
+│   ├── INFORME.pdf
+│   └── HONOR.md
+│
+└── README.md
 ## Lenguaje Asignado: 
 Scheme.
 
