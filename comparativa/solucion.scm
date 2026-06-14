@@ -40,7 +40,7 @@
 ;;; ESTRATEGIA: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 216 segundos, evaluando rangos numéricos con 'cond'.
 ;;; IMPACTO: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
 ;;; ========================================================
-(defun timer (tiempo-unix)
+(define timer (tiempo-unix)
 (let ((segundo-actual (mod tiempo-unix 225)))
   (cond
     
