@@ -279,7 +279,7 @@
 ;; IMPACTO: No destructiva
 ;; ========================================================
 (defun informe (datos)
-  (with-open-file (stream "informe-ejecucion-semaforo.txt" :direction :output :if-exists :append)
+  (with-open-file (stream "informe-ejecucion-semaforo.txt" :direction :output :if-exists :supersede)
     (format stream "Informe de Ejecución del Sistema Semafórico~%")
     (format stream "=========================================~%")
     (mapcar 
