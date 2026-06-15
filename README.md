@@ -17,7 +17,7 @@ Ademas, se incluye una comparacion con Scheme, donde se reimplementan 2 funcione
 ```text
 TPI-Funcional-2026-Grupo3/
 ├── lisp/
-│   ├── core.lisp
+│   └── core.lisp
 │
 ├── comparativa/
 │   └── solucion.scm
