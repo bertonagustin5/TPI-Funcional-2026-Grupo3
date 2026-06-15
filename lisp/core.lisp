@@ -16,15 +16,15 @@
   ((and (eq color-actual 'en-rojo)  (eq cambiar-a 'intermitente))
    (list 'en-rojo "cambiar-a-intermitente"))
 
-  ((and (eq color-actual 'en-intermitente)  (eq cambiar-a 'amarillo))
-      (list 'en-intermitente "cambiar-a-amarillo"))
+  ((and (eq color-actual 'en-intermitente)  (eq cambiar-a 'verde))
+      (list 'en-intermitente "cambiar-a-verde"))
 
   
   ((and (eq color-actual 'en-amarillo) (eq cambiar-a 'intermitente))
    (list 'en-amarillo "cambiar-a-intermitente"))
 
-   ((and (eq color-actual 'en-intermitente)  (eq cambiar-a 'verde))
-      (list 'en-intermitente "cambiar-a-verde"))
+   ((and (eq color-actual 'en-intermitente)  (eq cambiar-a 'amarillo))
+      (list 'en-intermitente "cambiar-a-amarillo"))
 
   
   ((and (eq color-actual 'en-verde) (eq cambiar-a 'intermitente))
@@ -51,11 +51,11 @@
     
     ((< segundo-actual 93) 'en-intermitente)
 
-    ((< segundo-actual 99) 'en-amarillo)
+    ((< segundo-actual 99) 'en-verde)
 
     ((< segundo-actual 102) 'en-intermitente)
 
-    ((< segundo-actual 222) 'en-verde)
+    ((< segundo-actual 222) 'en-amarillo)
     
     (t 'en-intermitente))))
 
@@ -85,7 +85,7 @@
 ;; IMPACTO: No destructiva
 ;; ========================================================
 (defun duracion-ciclo (rojo amarillo verde intermitente)
-(+ rojo (* 2 amarillo) verde (* 4 intermitente))
+(+ rojo  amarillo verde (* 3 intermitente))
 )
 
 ;; ========================================================
@@ -134,8 +134,8 @@
 	(let ((duracion-total 225)(tiempo-rojo 90)(tiempo-amarillo 6)(tiempo-verde 120)(tiempo-intermitente 9))
 		(list
 		   	(list 'en-rojo (* (/ tiempo-rojo duracion-total) 100.0))
+		 	(list 'en-verde (* (/ tiempo-verde duracion-total) 100.0))
 		   	(list 'en-amarillo (* (/ tiempo-amarillo duracion-total) 100.0))
-		   	(list 'en-verde (* (/ tiempo-verde duracion-total) 100.0))
 		    (list 'en-intermitente(* (/ tiempo-intermitente duracion-total) 100.0))
 	    )
 	)
