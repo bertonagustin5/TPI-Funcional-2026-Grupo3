@@ -170,7 +170,7 @@
 ;;; ========================================================
 ;;; FUNCIÓN: timer
 ;;; NATURALEZA: Función pura y determinística.
-;;; ESTRATEGIA: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 216 segundos, evaluando rangos numéricos con 'cond'.
+;;; ESTRATEGIA: Utiliza aritmética modular ('mod') para delimitar el tiempo dentro de un ciclo constante de 225 segundos, evaluando rangos numéricos con 'cond'.
 ;;; IMPACTO: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
 ;;; ========================================================
 (defun timer (tiempo-unix)
@@ -181,9 +181,9 @@
     
     ((< segundo-actual 93) 'en-intermitente)
 
-    ((< segundo-actual 99) 'en-verde)
+    ((< segundo-actual 213) 'en-verde)
 
-    ((< segundo-actual 102) 'en-intermitente)
+    ((< segundo-actual 216) 'en-intermitente)
 
     ((< segundo-actual 222) 'en-amarillo)
     
