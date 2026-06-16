@@ -33,5 +33,5 @@ TPI-Funcional-2026-Grupo3/
 Scheme.
 
 ## Enlaces:
--(video de youtube)
+-[(video de youtube)](https://youtu.be/hfGWrmSAg7M)
       
