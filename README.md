@@ -16,16 +16,13 @@ Ademas, se incluye una comparacion con Scheme, donde se reimplementan 2 funcione
 
 ```text
 TPI-Funcional-2026-Grupo3/
-├── lisp/
-│   └── core.lisp
-│
 ├── comparativa/
 │   └── solucion.scm
-│
 ├── docs/
-│   ├── INFORME.pdf
-│   └── HONOR.md
-│
+│   ├── HONOR.md
+│   └── INFORME-TPI-GRUPO-3.pdf
+├── lisp/
+│   └── core.lisp
 └── README.md
 ```
 
