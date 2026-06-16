@@ -41,7 +41,7 @@
 ;;; IMPACTO: Permite automatizar la secuencia semafórica respetando los tiempos de negocio (90s, 120s, 6s) sin necesidad de mantener variables globales de estado.
 ;;; ========================================================
 (define timer (tiempo-unix)
-(let ((segundo-actual (mod tiempo-unix 225)))
+(let ((segundo-actual (modulo tiempo-unix 225)))
   (cond
     
     ((< segundo-actual 90) 'en-rojo)
