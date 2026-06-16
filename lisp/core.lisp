@@ -250,7 +250,7 @@
 
 (defun ciclos-por-tiempo (minutos)
   ;recibe los minutos 
-  (floor (/ (* minutos 60)  (duracion-ciclo 90 120 6 3))))
+  (floor (/ (* minutos 60)  (duracion-ciclo 90 120 6 9))))
 
 
 ;REQUERIMIENTO 6:
