@@ -285,8 +285,7 @@
     (mapcar 
 	 (lambda (registro)
        (format stream "~A - Transición: ~A -> ~A~%"
-               (local-time:format-timestring nil
-               (local-time:unix-to-timestamp (car registro)))
+               (local-time:format-timestring nil (local-time:unix-to-timestamp (car registro)))
                (cadr registro)
                (caddr registro)))
      datos)
